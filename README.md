@@ -38,4 +38,5 @@ Aahar is a full-stack food delivery web application designed to provide a seamle
 
 ## 📜 License
 This project is available for viewing purposes only. No part of this code may be copied, modified, distributed, or used in any form without explicit written permission from the author.
+See the full **[LICENSE](LICENSE)** file for more details.
 

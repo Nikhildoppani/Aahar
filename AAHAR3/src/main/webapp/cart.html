@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart - Aahar Food Delivery</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <a href="javascript:history.back()" class="back-button">←</a>
+      <div class="header-text">
+        <h1>Your Cart</h1>
+        <p>Review your order</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="cart-container">
+      <div class="cart-items">
+        <!-- Cart items will be dynamically added here -->
+      </div>
+
+      <div class="cart-summary">
+        <h3>Order Summary</h3>
+        <div class="summary-item">
+          <span>Subtotal</span>
+          <span class="subtotal">₹0</span>
+        </div>
+        <div class="summary-item">
+          <span>Tax (5%)</span>
+          <span class="tax">₹0</span>
+        </div>
+        <div class="summary-item">
+          <span>Delivery Charge</span>
+          <span class="delivery">₹40</span>
+        </div>
+        <div class="summary-item total">
+          <span>Total</span>
+          <span class="total-amount">₹0</span>
+        </div>
+        <button class="order-now" onclick="location.href='payment.jsp'">Order Now</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- <script src="script.js"></script> -->
+</body>
+</html>

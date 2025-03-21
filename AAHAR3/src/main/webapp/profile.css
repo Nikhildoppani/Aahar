@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  
+  body {
+    background-color: #f9fafb;
+    min-height: 100vh;
+  }
+  
+  .header {
+    background-color: #ea580c;
+    color: white;
+    padding: 1.5rem 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-content {
+    max-width: 64rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .back-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.375rem;
+    transition: background-color 0.2s;
+    text-decoration: none;
+  }
+  
+  .back-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .logout-button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    transition: background-color 0.2s;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+  }
+  
+  .logout-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .logout-button i {
+    font-size: 1rem;
+  }
+  
+  .header-text {
+    flex: 1;
+  }
+  
+  .header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+  }
+  
+  .header p {
+    color: #fed7aa;
+  }
+  
+  .container {
+    max-width: 64rem;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  .profile-container {
+    max-width: 32rem;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  /* Logo Section */
+  .logo-section {
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: #fff7ed;
+  }
+  
+  .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ea580c;
+  }
+  
+  .logo i {
+    font-size: 2.5rem;
+  }
+  
+  /* Profile Information */
+  .profile-info {
+    padding: 2rem;
+  }
+  
+  .info-item {
+    margin-bottom: 1.5rem;
+  }
+  
+  .info-item:last-child {
+    margin-bottom: 1.5rem;
+  }
+  
+  .info-item label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #6b7280;
+    margin-bottom: 0.5rem;
+  }
+  
+  .value-container {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    background-color: #f9fafb;
+    border-radius: 0.5rem;
+    border: 1px solid #e5e7eb;
+  }
+  
+  .value-container.editable {
+    background-color: white;
+  }
+  
+  .value {
+    flex: 1;
+    font-size: 1rem;
+    color: #1f2937;
+  }
+  
+  .edit-input {
+    flex: 1;
+    border: none;
+    background: none;
+    font-size: 1rem;
+    color: #1f2937;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .edit-input:focus {
+    outline: none;
+  }
+  
+  .edit-input.editing {
+    background-color: #fff7ed;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+  }
+  
+  .edit-input.address {
+    resize: none;
+    min-height: 4rem;
+    line-height: 1.5;
+  }
+  
+  .edit-btn {
+    background: none;
+    border: none;
+    color: #9ca3af;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+    transition: all 0.2s;
+  }
+  
+  .edit-btn:hover {
+    background-color: #f3f4f6;
+    color: #4b5563;
+  }
+  
+  /* Make inputs look like regular text when readonly */
+  input[readonly], textarea[readonly] {
+    cursor: default;
+  }
+  
+  /* Action Buttons */
+  .action-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .cancel-btn, .save-btn {
+    flex: 1;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .cancel-btn {
+    background-color: #f3f4f6;
+    border: 1px solid #e5e7eb;
+    color: #4b5563;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #e5e7eb;
+  }
+  
+  .save-btn {
+    background-color: #ea580c;
+    border: none;
+    color: white;
+  }
+  
+  .save-btn:hover {
+    background-color: #c2410c;
+  }
+
+  /* .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:none;
+  } */
+  
+   .login-logo {
+    width: 150px; 
+    max-width: 100%; 
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px; 
+  
+  }
+ 
+   
